@@ -15,4 +15,6 @@ jobs:
             ls -ltra
             cat README.md
         - name: Generate Asci content
-          run: cowsay -f dragon "Run for cover, I am dragon" >> dragon.txt
+          run: |
+            apt install cowsay
+            cowsay -f dragon "Run for cover, I am dragon" >> dragon.txt
