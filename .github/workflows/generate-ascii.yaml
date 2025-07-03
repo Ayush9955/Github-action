@@ -9,5 +9,8 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4
 
-        - name: Generate Asci content
-          run: ./ascii-script.sh
+        - name: list file
+          run: ls -ltra
+
+        - name: run shell script
+          run: ../ascii-script.sh
