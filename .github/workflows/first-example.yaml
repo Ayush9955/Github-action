@@ -16,5 +16,5 @@ jobs:
             cat README.md
         - name: Generate Asci content
           run: |
-            apt install cowsay
+            sudo apt install cowsay
             cowsay -f dragon "Run for cover, I am dragon" >> dragon.txt
