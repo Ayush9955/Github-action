@@ -18,3 +18,12 @@ jobs:
           run: |
             sudo apt install cowsay
             cowsay -f dragon "Run for cover, I am dragon" >> dragon.txt
+
+        - name: Test file exists
+          run: grep -i "dragon" dragon.txt
+
+        - name: Read file
+          run: cat dragon.txt
+
+        - name: List Repo files
+          run: ls -ltra
